@@ -60,6 +60,29 @@ value(1,1,1,8,1);
 insert into Mark
 value(2,1,2,10,2);
 
+-- Hien thi danh sach tat ca cac hoc sinh
+select *
+from Student;
+
+-- hien thi danh sach hoc vien dang theo hoc
+select *
+from Student
+where StatusStudent = true;
+
+-- hien thi danh sach cac mon hoc cos thoi gian nho hon 10
+
+select *
+from Subjectt
+where Credit <10;
+
+-- hien thi danh sach hoc vien lop A1
+-- su dung cau lenh join va where
+
+select S.StudentID, S.StudentName, C.ClassName
+from Student S join Class C ON S.ClassID = C.ClassID
+where C.ClassName = "A1";
+
+
 
 
 
