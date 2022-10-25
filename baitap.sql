@@ -1,0 +1,1 @@
+SELECT * FROM baitap4.VATTU;
