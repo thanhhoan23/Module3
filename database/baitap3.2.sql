@@ -42,6 +42,7 @@ inner join Orderr on Customer.cID= Orderr.cID
 inner join OrderDetail on Orderr.oID = OrderDetail.oID
 inner join Product on OrderDetail.pID = Product.pID;
 
+
 -- Hien thi ten cua khach hang khong mua sp nao
 
 select Customer.cName 
@@ -50,6 +51,9 @@ where Customer.cID not in (select Orderr.cID from Orderr);
 
 -- Hien thi ma don hang, ngay ban va gia tien cua tung hoa don
 
+select Orderr.oTotalPrice
+from Orderr
+ Orderr.oTotalPrice = OrderDetail.odQuantity * Product.pPrice;
 
 
 
